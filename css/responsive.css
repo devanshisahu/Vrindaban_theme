@@ -1,0 +1,695 @@
+@media (max-width: 991px) {
+    .sticky-wrapper.is-sticky .horizontal-main {
+        background: 0 0;
+    }
+    .sticky-wrapper {
+        height: 0 !important;
+        position: relative !important;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .sticky-wrapper.is-sticky .horizontal-main {
+        background: #fff !important;
+        box-shadow: 2px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+        height: 60px !important;
+    }
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu {
+        opacity: 0;
+        visibility: hidden;
+        -o-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -webkit-transform-origin: 0% 0%;
+        -o-transition: -o-transform 0.3s, opacity 0.3s;
+        -ms-transition: -ms-transform 0.3s, opacity 0.3s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+        transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform: rotateX(-75deg);
+        -o-transform: rotateX(-75deg);
+        -moz-transform: rotateX(-75deg);
+        -webkit-transform: rotateX(-75deg);
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li:hover>ul.sub-menu,
+    .horizontalMenu>.horizontalMenu-list>li:hover>.horizontal-megamenu {
+        opacity: 1;
+        visibility: visible;
+        transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform: rotateX(-75deg);
+        -o-transform: rotateX(-75deg);
+        -moz-transform: rotateX(-75deg);
+        -webkit-transform: rotateX(-75deg);
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li:hover>ul.sub-menu {
+        opacity: 1;
+        visibility: visible;
+        -o-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -webkit-transform-origin: 0% 0%;
+        -o-transition: -o-transform 0.4s, opacity 0.4s;
+        -ms-transition: -ms-transform 0.4s, opacity 0.4s;
+        -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+        -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+        transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
+        opacity: 0;
+        visibility: hidden;
+        -o-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -webkit-transform-origin: 0% 0%;
+        -o-transition: -o-transform 0.4s, opacity 0.4s;
+        -ms-transition: -ms-transform 0.4s, opacity 0.4s;
+        -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+        -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+        transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform: rotateX(-75deg);
+        -o-transform: rotateX(-75deg);
+        -moz-transform: rotateX(-75deg);
+        -webkit-transform: rotateX(-75deg);
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li:hover>ul.sub-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+    }
+
+}
+
+/* Extra @Media Query*/
+@media only screen and (min-width: 992px) and (max-width: 1162px) {
+    .horizontalMenu>.horizontalMenu-list>li>a {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>a>.arrow {
+        display: none;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li a.menuhomeicon {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}
+
+/* ================== Mobile Menu Change Brake Point ================== */
+@media only screen and (max-width: 991px) {
+
+    /* ================== Mobile Base CSS ================== */
+    body.active {
+        overflow: hidden;
+    }
+
+    /* ================== Mobile Main Menu CSS ================== */
+    .horizontal-main {
+        height: 0;
+        padding: 0;
+    }
+
+    .horizontalMenucontainer {
+        background-attachment: local;
+        background-position: 33% 0%;
+    }
+
+    .horizontalMenu {
+        width: 100%;
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        left: 0;
+        overflow-y: hidden;
+        padding: 0;
+        top: 0;
+        position: fixed;
+        visibility: hidden;
+        margin: 0px;
+    }
+
+    .horizontalMenu>.horizontalMenu-list {
+        height: auto;
+        min-height: 100%;
+        width: 240px;
+        background: #fff;
+        padding-bottom: 0;
+        margin-left: -240px;
+        display: block;
+        text-align: center;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li {
+        text-align: left;
+        width: 100%;
+        display: block;
+        float: none;
+        border-right: none;
+        background-color: transparent;
+        position: relative;
+        white-space: inherit;
+        clear: right;
+        padding: 15px 15px;
+        border-bottom: 1px solid;
+        border-bottom-color: rgba(0, 0, 0, 0.13);
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li span a {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>a {
+        font-size: 14px;
+        text-align: left;
+        border-right: solid 0px;
+        color: #6c6a8d;
+        line-height: 25px;
+        position: static;
+        margin: 0;
+        border-radius: 0px;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>a span.fas.fa-caret-down {
+        display: none;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li a.menuhomeicon {
+        padding-left: 17px;
+        padding-right: 17px;
+        border-top: solid 1px rgba(0, 0, 0, 0.13);
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>a>.fa {
+        font-size: 16px;
+        color: #bfbfbf;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>a .arrow:after {
+        display: none;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li:hover>a {
+        text-decoration: none;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>a>.hometext {
+        display: inline-block;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu {
+        display: none;
+        position: relative;
+        top: 0px;
+        background-color: #fff;
+        border: none;
+        padding: 0px;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        -webkit-transition: inherit;
+        -moz-transition: inherit;
+        transition: inherit;
+        -webkit-transform-style: flat;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a {
+        line-height: 20px;
+        font-size: 13px;
+        padding: 10px 0px 10px 16px;
+        color: #383838;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li span+a {
+        padding-right: 30px;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a>.fa {
+        display: none;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a:hover {
+        background-color: #f6f7fb;
+        color: #6c6a8d;
+        text-decoration: none;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu li:hover>a {
+        background-color: #f6f7fb;
+        color: #6c6a8d;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu {
+        width: 100%;
+        position: static;
+        left: 100%;
+        top: 0;
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        border: solid 0px;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        -webkit-transition: inherit;
+        -moz-transition: inherit;
+        transition: inherit;
+        -webkit-transform-style: flat;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li {
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        position: relative;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a {
+        line-height: 20px;
+        font-size: 13px;
+        padding: 10px 0px 10px 26px;
+        color: #383838;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li span+a {
+        padding-right: 30px;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a>.fa {
+        display: none;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
+        background-color: #e7e7e7;
+        color: #6c6a8d;
+        text-decoration: none;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a.active {
+        color: #000;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li:hover>a {
+        color: #000;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
+        width: 100%;
+        position: static;
+        left: 100%;
+        top: 0;
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        border: solid 0px;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        -webkit-transition: inherit;
+        -moz-transition: inherit;
+        transition: inherit;
+        -webkit-transform-style: flat;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
+        line-height: 20px;
+        font-size: 13px;
+        padding: 10px 0px 10px 34px;
+        color: #383838;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li span+a {
+        padding-right: 30px;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a>.fa {
+        display: none;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
+        background-color: #e7e7e7;
+        color: #6c6a8d;
+        text-decoration: none;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a.active {
+        color: #000;
+    }
+
+    /* ================== Mobile Slide Down Links CSS ================== */
+
+    /* ================== Mobile Header CSS ================== */
+    .horizontal-header {
+        width: 100% !important;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 54px;
+        background-color: #fff;
+        text-align: center;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .active .horizontal-header {
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .horizontal-header .smllogo {
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+
+    /* Mobile Toggle Menu icon (X ICON) */
+    .animated-arrow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 102;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+        padding: 16px 35px 16px 0px;
+        margin: 11px 0 0 15px;
+        cursor: pointer;
+    }
+
+    .animated-arrow span {
+        cursor: pointer;
+        height: 2px;
+        width: 17px;
+        background: #a9a9a9;
+        position: absolute;
+        display: block;
+        content: '';
+        cursor: pointer;
+        height: 2px;
+        width: 17px;
+        background: #a9a9a9;
+        position: absolute;
+        display: block;
+        content: '';
+        transition: all 500ms ease-in-out;
+    }
+
+    .animated-arrow span:before,
+    .animated-arrow span:after,
+    .animated-arrow span:before,
+    .animated-arrow span:after {
+        cursor: pointer;
+        height: 2px;
+        width: 17px;
+        background: #a9a9a9;
+        position: absolute;
+        display: block;
+        content: '';
+    }
+
+    .animated-arrow span:before {
+        top: -7px;
+        width: 23px;
+    }
+
+    .animated-arrow span:after {
+        bottom: -7px;
+        width: 17px;
+    }
+
+    .animated-arrow span:before,
+    .animated-arrow span:after {
+        transition: all 500ms ease-in-out;
+    }
+
+    .active .animated-arrow span {
+        background-color: transparent;
+    }
+
+    .active .animated-arrow span:after {
+        width: 23px;
+        top: -3px;
+    }
+
+    .active .animated-arrow span:before {
+        top: -3px;
+    }
+
+    .active .animated-arrow.active span:after {
+        top: -3px;
+    }
+
+    .active .animated-arrow span:before {
+        transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        bottom: 0px;
+    }
+
+    .active .animated-arrow span:after {
+        transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    /* ================== Mobile Overlay/Drawer CSS ================== */
+    .outsidebg {
+        right: 0;
+        width: calc(100% - 240px);
+        height: 100vh;
+        min-height: 100%;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.45);
+        cursor: pointer;
+    }
+
+    .active .horizontalMenu .outsidebg {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: opacity 1.5s ease-in-out;
+        -moz-transition: opacity 1.5s ease-in-out;
+        -ms-transition: opacity 1.5s ease-in-out;
+        -o-transition: opacity 1.5s ease-in-out;
+    }
+
+    .horizontalMenucontainer {
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .active .horizontalMenucontainer {
+        margin-left: 240px;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .active .horizontalMenu {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        visibility: visible;
+        z-index: 1000;
+        top: 0;
+        height: 100% !important;
+    }
+
+    .active .horizontalMenu>.horizontalMenu-list {
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        margin-left: 0;
+    }
+
+
+    /* ================== Mobile Sub Menu Expander Arrows  ================== */
+    .horizontalMenu>.horizontalMenu-list>li>.horizontalMenu-click {
+        height: 49px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li .horizontalMenu-click.ws-activearrow>i {
+        transform: rotate(180deg);
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>.horizontalMenu-click>i {
+        display: block;
+        height: 23px;
+        width: 25px;
+        margin-top: 14px;
+        margin-right: 10px;
+        background-size: 25px;
+        font-size: 21px;
+        color: #ccc;
+        float: right;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li .horizontalMenu-click02 {
+        height: 41px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li .horizontalMenu-click02>i {
+        display: block;
+        height: 23px;
+        width: 25px;
+        margin: 8px 6px 8px 6px;
+        background-size: 25px;
+        font-size: 21px;
+        color: rgba(0, 0, 0, 0.25);
+        float: right;
+    }
+
+    .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li .horizontalMenu-click02>i.horizontalMenu-rotate {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    /*End Media Query*/
+}
+
+@media only screen and (max-width: 768px) {
+    .pt-80 {
+        padding: 50px 0px;
+    }
+    .btn.btn-theme {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    /*.section1:after {
+        top: 50px;
+        width: 25%;
+        height: 6%;
+        background-size: contain;
+    }
+    .section1:before {
+        top: unset;
+        bottom: 30%;
+        width: 25%;
+        height: 6%;
+        background-size: contain;
+    }*/
+    .guest_name {
+        font-size: 16px;
+    }
+    .all_noti_wrap {
+        height: auto;
+    }
+    .slick-prev.pull-left.slick-arrow, .slick-next.pull-right.slick-arrow {
+        width: 30px;
+        height: 30px;
+    }
+    .slick-prev.pull-left.slick-arrow {
+        left: -15px;
+    }
+    .slick-next.pull-right.slick-arrow {
+        right: -15px;
+    }
+    .icon-box {
+        margin-bottom: 50px;
+    }
+    .cont_bg {
+        padding: 15px 0 0 0;
+    }
+    .icon-box h4 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .chair_wrap.cm {
+        padding-top: 50px;
+    }
+    .footer_wrapper {
+        text-align: center;
+        line-height: 24px;
+    }
+    .all_up {
+        margin-top: 35px;
+    }
+    .single_noti span {
+        padding-left: 5px;
+    }
+}
+
